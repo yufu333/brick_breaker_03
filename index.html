@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+            user-scalable=no">
+    <title>ブロック崩し</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.2.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.2.1/core.js"></script>
+    <style>
+        body { text-align:center; padding:0; margin:0; font-family: sans-serif; }
+        #canvas { border:1px solid #000; touch-action: none; }
+        #start_button { font-size: 18px; padding: 8px 14px; }
+        #info { margin: 12px 0; }
+    </style>
+</head>
+
+<!-- ゲーム画面 -->
+<body>
+    <h3 id="info">ブロック崩し</h3>
+    <button id="start_button" disabled>読み込み中...</button>
+    <br><br>
+    <canvas id="canvas" width="400" height="500"></canvas>
+    <!-- DOM生成後に main.py を実行させるため、body末尾に置く -->
+    <script type="py" src="main.py"></script>
+</body>
+</html>
