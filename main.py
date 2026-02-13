@@ -19,11 +19,11 @@ BLOCK_COLORS = [            #ブロックの色
     "#3483C9", "#378BD6", "#3B95E6", "#3F9DF2", "#42A6FF"]
 
 # パドル
-PADDLE_IMPULSE = 0.50       # パドル速度(px/tick) → dx へ足す係数（大きいほど左右に飛ぶ）
-ACCEL_PER_PX = 0.05         # |パドル速度| 1px/tick あたりの速度倍率の増分
-ACCEL_MAX = 0.35            # 1回のヒットでの最大加速（+35%まで）
+PADDLE_IMPULSE = 2.00       # パドル速度(px/tick) → dx へ足す係数（大きいほど左右に飛ぶ）
+ACCEL_PER_PX = 0.15         # |パドル速度| 1px/tick あたりの速度倍率の増分
+ACCEL_MAX = 2.00            # 1回のヒットでの最大加速（+35%まで）
 MIN_SPEED = 6               # ボール最低速度
-MAX_SPEED = 25              # ボール最高速度（上限）
+MAX_SPEED = 60              # ボール最高速度（上限）
 
 # グローバル変数の宣言
 info = document.getElementById("info") # 情報表示用の要素を取得
