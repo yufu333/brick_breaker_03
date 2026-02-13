@@ -234,6 +234,8 @@ def update_paddle(new_px):
     game["last_px"] = float(new_px)
     game["last_t"] = now
     game["px"] = new_px
+    # ---- モニター ----
+    info.innerText = f"pvx={game['pvx']:.1f}  speed={math.hypot(game['dx'], game['dy']):.1f}"
 
 
 def start_button_on_click(event):
