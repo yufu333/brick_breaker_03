@@ -239,7 +239,7 @@ def update_paddle(new_px):
     game["last_px"] = float(new_px)
     game["last_t"] = now
     game["px"] = new_px
-    
+ 
 
 def start_button_on_click(event):
     """スタートボタンがクリックされたときの処理"""
@@ -270,6 +270,7 @@ def set_player_x_from_mouse(client_x):
         px = max_px
 
     game["px"] = px
+    update_paddle(px)
     draw_screen()
 
 def on_mouse_enter(event):
