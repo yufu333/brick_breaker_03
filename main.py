@@ -220,7 +220,7 @@ def update_paddle(new_px):
     # パドル一の計算、速度更新
     if game["game_over"]:
         return
-    now = gloat(performance.now())
+    now = float(performance.now())
     last_t = float(game.get("last_t", now))
     last_px = float(game.get("last_px", new_px))
 
