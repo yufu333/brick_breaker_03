@@ -216,8 +216,7 @@ def draw_screen():
         info.innerText = (
             f"スコア:{game['score']}  "
             f"pvx:{game['pvx']:.1f}  "
-            f"speed:{speed:.1f}"
-  
+            f"speed:{speed:.1f}")
 
 
 # -----------  コントロール　-------------
