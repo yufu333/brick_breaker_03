@@ -212,7 +212,12 @@ def draw_screen():
 
     # スコア表示
     if not game["game_over"]:
-        info.innerText = f"ブロック崩し　スコア: {game['score']}点"
+        speed = math.hypot(game["dx"], game["dy"])
+        info.innerText = (
+            f"スコア:{game['score']}  "
+            f"pvx:{game['pvx']:.1f}  "
+            f"speed:{speed:.1f}"
+  
 
 
 # -----------  コントロール　-------------
@@ -234,9 +239,7 @@ def update_paddle(new_px):
     game["last_px"] = float(new_px)
     game["last_t"] = now
     game["px"] = new_px
-    # ---- モニター ----
-    info.innerText = f"pvx={game['pvx']:.1f}  speed={math.hypot(game['dx'], game['dy']):.1f}"
-
+    
 
 def start_button_on_click(event):
     """スタートボタンがクリックされたときの処理"""
