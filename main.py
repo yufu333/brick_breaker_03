@@ -19,7 +19,7 @@ BLOCK_COLORS = [            #ブロックの色
     "#3483C9", "#378BD6", "#3B95E6", "#3F9DF2", "#42A6FF"]
 
 # パドル
-PADDLE_IMPULSE = 1.00       # パドル速度(px/tick) → dx へ足す係数（大きいほど左右に飛ぶ）
+PADDLE_IMPULSE = 0.05       # パドル速度(px/tick) → dx へ足す係数（大きいほど左右に飛ぶ）
 ACCEL_PER_PX = 0.08         # |パドル速度| 1px/tick あたりの速度倍率の増分
 ACCEL_MAX = 2.00            # 1回のヒットでの最大加速（+35%まで）
 MIN_SPEED = 6               # ボール最低速度
